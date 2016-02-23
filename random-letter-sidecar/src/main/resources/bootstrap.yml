@@ -1,7 +1,7 @@
 spring:
   application:
     name: random-letter-ms
-  profiles: random-letter-sidecar1
+  profiles: random1
         
 server:
   port: 9595
@@ -26,7 +26,7 @@ logging:
 spring:
   application:
     name: random-letter-ms
-  profiles: random-letter-sidecar2
+  profiles: random2
 ---
 server:
   port: 9696
