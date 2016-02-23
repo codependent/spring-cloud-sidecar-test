@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: random-letter-ms
+  profiles: random-letter-sidecar1
+        
+server:
+  port: 9595
+
+sidecar:
+  port: 3000
+  health-uri: http://localhost:3000/health.json
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  
+logging:
+#   file: /var/memento/security.log
+  level:
+    org.springframework.web: 'DEBUG'
+
+---    
+spring:
+  application:
+    name: random-letter-ms
+  profiles: random-letter-sidecar2
+---
+server:
+  port: 9696
+
+sidecar:
+  port: 3000
+  health-uri: http://localhost:3000/health.json
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  
+logging:
+#   file: /var/memento/security.log
+  level:
+    org.springframework.web: 'DEBUG'

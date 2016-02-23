@@ -1,0 +1,41 @@
+---
+spring:
+  application:
+    name: random-number-ms
+  profiles: random1
+  cloud:
+        
+server:
+  port: 9999
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  
+logging:
+#   file: /var/memento/security.log
+  level:
+    org.springframework.web: 'DEBUG'
+---
+spring:
+  application:
+    name: random-number-ms
+  profiles: random2
+        
+server:
+  port: 9998
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  
+logging:
+#   file: /var/memento/security.log
+  level:
+    org.springframework.web: 'DEBUG'

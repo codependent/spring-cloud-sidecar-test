@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8761}
+        
+eureka:
+  instance:
+    hostname: eureka-server
+#  server:
+#   enableSelfPreservation: false
+#   waitTimeInMsWhenSyncEmpty: 0
+logging:
+#   file: /var/memento/security.log
+    level:
+        org.springframework.web: 'DEBUG'
