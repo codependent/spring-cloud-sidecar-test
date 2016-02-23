@@ -24,7 +24,7 @@ public class RandomNameMsApplication {
 	@Autowired
 	private Environment environment;
 	
-	@RequestMapping(value="/randomNumbers", params={"random=true", "fields=url"})
+	@RequestMapping(value="/numbers")
     public double getRandomNumber(HttpServletRequest request) {
 		logger.info("getRandomNumber - env[{}]", new Object[]{environment.getActiveProfiles()});
 		return Math.random();
