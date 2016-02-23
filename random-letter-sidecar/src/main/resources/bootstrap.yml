@@ -32,7 +32,7 @@ server:
   port: 9696
 
 sidecar:
-  port: 3000
+  port: 3001
   health-uri: http://localhost:3000/health.json
 
 eureka:
