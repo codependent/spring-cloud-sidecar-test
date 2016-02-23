@@ -19,8 +19,8 @@ You should see two instances on the Eureka console localhost:8761
 5. Start another instance on the letter ms `node bin/www` -> localhost:3001/letters
 
 ###random-letter-sidecar
-1. Run `RandomLetterMsSidecarApplication` as a Spring boot application with spring.profiles.active=random-letter-sidecar1 -> localhost:9595/letters
-2. 1. Run `RandomLetterMsSidecarApplication` as a Spring boot application with spring.profiles.active=random-letter-sidecar1 -> localhost:9696/letters
+1. Run `RandomLetterMsSidecarApplication` as a Spring boot application with spring.profiles.active=random1 -> localhost:9595/letters
+2. 1. Run `RandomLetterMsSidecarApplication` as a Spring boot application with spring.profiles.active=random2 -> localhost:9696/letters
 
 
 
