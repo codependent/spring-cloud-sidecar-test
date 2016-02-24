@@ -3,7 +3,6 @@ spring:
   application:
     name: random-number-ms
   profiles: random1
-  cloud:
         
 server:
   port: 9999
